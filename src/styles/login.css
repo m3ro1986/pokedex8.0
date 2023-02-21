@@ -1,0 +1,169 @@
+.loginBox {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('descarga2.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.loginBox>main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.loginBox>main>figure {
+    position: relative;
+    width: 350px;
+    height: 525px;
+    background-image: url('pokedex.jpg');
+    border-radius: 13px;
+    text-align: center;
+    animation: down .5s linear;
+}
+
+@keyframes down {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.loginBox>main>figure>span {
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    top: 13px;
+    left: 36px;
+    border-radius: 50%;
+}
+
+.loading {
+    animation: shine .5s infinite;
+}
+
+@keyframes shine {
+    from {
+        background-color: black;
+    }
+
+    to {
+        background-color: transparent;
+    }
+}
+
+.welcomeMessageBox {
+    margin-top: 150px;
+    padding: 0 30px;
+    font-size: 1.3rem;
+}
+
+.loginControlBox {
+    position: absolute;
+    top: 0;
+    width: 350px;
+    height: 525px;
+}
+
+.loginControlBox>input {
+    position: absolute;
+    bottom: 109px;
+    left: 22px;
+    width: 306px;
+    height: 22px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.loginControlBox>div {
+    position: absolute;
+    height: 87px;
+    width: 160px;
+    background-color: white;
+    bottom: 21px;
+    left: 103px;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+.slideRight {
+    position: relative;
+    animation: moveright 1s linear;
+}
+
+.slideLeft {
+    position: relative;
+    animation: moveleft 1s linear;
+}
+
+@keyframes moveright {
+    0% { left:0px; top:0px}
+    20% { left:200px; top:0px}
+    40% { left:100px; top:100px}
+    60% { left:-200px; top:100px}
+    80% { left:-200px; top:0px}
+    100% { left:0px; top:0px}
+}
+
+@keyframes moveleft {
+    0% { left:0px; top:0px}
+    20% { left:-200px; top:0px}
+    40% { left:-200px; top:100px}
+    60% { left:200px; top:100px}
+    80% { left:200px; top:0px}
+    100% { left:0px; top:0px}
+}
+
+.loginControlBox>div>span {
+    position: absolute;
+    bottom: 1px;
+    left: 0px;
+    font-size: 8px;
+    width: 154px;
+}
+
+.arrows {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border-style: none;
+}
+
+.up {
+    bottom: 72px;
+    left: 49px;
+}
+
+.down {
+    bottom: 26px;
+    left: 48px;
+}
+
+.left {
+    bottom: 49px;
+    left: 27px;
+}
+
+.right {
+    bottom: 49px;
+    left: 70px;
+}
+
+.go {
+    position: absolute;
+    bottom: 33px;
+    right: 26px;
+    width: 30px;
+    height: 31px;
+    border-radius: 50%;
+    background-color: transparent;
+    border-style: none;
+}
