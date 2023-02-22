@@ -36,6 +36,17 @@
     }
 }
 
+.loginBox > main > figure > img {
+    position: absolute;
+    width: 180px;
+    height: 54px;
+    top: 31px;
+    right: 7px;
+    padding: 5px 0 15px 0;
+    background-color: #FF3334;
+    border-radius: 16px 0 0 0;
+}
+
 .loginBox>main>figure>span {
     position: absolute;
     width: 51px;
@@ -60,7 +71,54 @@
 }
 
 .welcomeMessageBox {
-    margin-top: 150px;
-    padding: 0 30px;
+    /* margin-top: 150px; */
+    padding: 150px 30px 0 30px;
     font-size: 1.3rem;
+}
+
+.controlBox {
+    position: absolute;
+    bottom: 0;
+    height: 270px;
+    width: 350px;
+}
+
+.controlBox>input {
+    position: absolute;
+    height: 21px;
+    width: 308px;
+    top: 140px;
+    left: 21px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.imgBox {
+    position: absolute;
+    height: 71px;
+    width: 154px;
+    bottom: 25px;
+    left: 107px;
+    background-color: #fff;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.imgBox > img {
+    /* padding: 10px; */
+    object-fit: contain;
+    /* width: 100%; */
+    max-height: 61px;
+}
+
+.imgBox > span {
+    font-size: 8px;
+}
+
+.pokeNumber {
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }

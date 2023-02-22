@@ -1,6 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
-import { getPokemon } from './pokemon.slice';
 
 export const pokemonsSlice = createSlice({
     name: 'pokemons',
@@ -14,10 +13,8 @@ export const pokemonsSlice = createSlice({
 })
 
 export const getPokemonsThunk = () => dispatch => {
-
     axios.get(`https://pokeapi.co/api/v2/pokemon/?limit=1279`)
         .then( res => dispatch( getPokemons( res.data.results )))
-
 }
 
 

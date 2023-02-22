@@ -10,5 +10,6 @@ export default configureStore({
         pokemons: pokemonsSlice,
         pokemon: pokemonSlice,
         isLoading: isLoadingSlice,
+
 	}
 })
