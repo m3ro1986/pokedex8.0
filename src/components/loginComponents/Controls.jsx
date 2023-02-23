@@ -80,6 +80,7 @@ const Controls = () => {
                 <button onClick={() => changePokemon('L')} className='btns left'></button>
 
                 <button onClick={goPokedex} className='go'>go</button>
+                <button onClick={() => setName('')} className='close'></button>
             </div>
         </div>
     );
