@@ -23,10 +23,10 @@
     background-image: url('pokedex.jpg');
     border-radius: 13px;
     text-align: center;
-    animation: down .5s linear;
+    animation: zoomMax .5s linear;
 }
 
-@keyframes down {
+@keyframes zoomMax {
     from {
         transform: scale(0);
     }
@@ -112,8 +112,33 @@
     max-height: 61px;
 }
 
+.slideR {
+    position: relative;
+    animation: slideRight 1.5s linear;
+}
+
+.slideL{
+    position: relative;
+    animation: slideRight 1.5s linear reverse;
+}
+
+
+@keyframes slideRight {
+    0%{ top: 0; left: 0px; }
+    30%{ top: 0px; left: 150px; }
+    45%{ top: 150px; left: 150px; }
+    50%{ top: 150px; left: -150px }
+    54%{ top: 0px; left: -150px }
+    100%{ top: 0; left: 0px; }
+}
+
 .imgBox > span {
     font-size: 8px;
+}
+
+.pokeName {
+    position: absolute;
+    bottom: 0;
 }
 
 .pokeNumber {
@@ -121,4 +146,48 @@
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.pokeColor {
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btns {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+}
+
+.up {
+    left: 49px;
+    bottom: 70px;
+}
+
+.down {
+    left: 49px;
+    bottom: 27px;
+}
+
+.right {
+    left: 71px;
+    bottom: 49px;
+}
+
+.left {
+    left: 26px;
+    bottom: 49px;
+}
+
+.go{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    bottom: 31px;
+    right: 24px;
+    border-radius: 50%;
 }
